@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Create the icon of each tab on the webpage -->
+    <link rel="shorcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Not important. Just use it in all your codes-->
+    <meta charset="UTF-8">
+    <!--all the information about the website are treated as meta data  -->
+    <!--Description of the website  -->
+    <meta name="description" content="Codify Academy's ####">
+    <!--Keywords for Document  -->
+    <meta name="keywords" content="Codify Academy, ######">
+    <!--Author of Document  -->
+    <meta name="author" content="Ismael Matos/ Codify Academy 03-2017">
+    <!--The viewport gives the browser instructions on how to control the page's dimensions and scaling-->
+    <!--Use it always  t make your querys work-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title /  gives the title to your website-->
+    <title> User Profile</title>
+
+    <!-- Font Awesome - Library with icons that you can use in ur web page -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Author Custom CSS / To call the CSS BOOTSTRAP file-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Author Custom CSS / To call the CSS ANIMATED file-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Author Custom CSS / To call the CSS file-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="jumbotron firstpage ">
+      <h1 class="firstpage">Welcome New Hero!!! </h1>
+    </div>
+
+    <form class="firstpage">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+
+        </div>
+        <div class="col-sm-6 col-md-3 gender">
+          <img class="hero" src="../interactiveuserprofile/img/thor.jpg" alt="">
+          <br>
+          <input type="radio" name="gender" class="gender" id="malegender" value="Male"> Male
+        </div>
+        <div class="col-sm-6 col-md-3 gender">
+          <img class="hero" src="../interactiveuserprofile/img/blackwidow.jpg" alt="">
+          <br>
+          <input type="radio" name="gender" class="gender" id="femalegender" value="Female"> Female
+
+        </div>
+      </div>
+      </form>
+
+      <h1 class="secondpage" >New Profile</h1>
+      <div class="form-inline secondpage">
+        <div class="form-group">
+          <input type="text" name="firstName" id="firstName" class="user form-control" placeholder="First Name">
+          <input type="text" name="lastName" id="lastName" class="user form-control" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="secondpage">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="email" class="form-control" placeholder="Email Address" id="useremail" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon fa fa-mobile" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Phone Number" id="userphone" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+
+
+    <div class=" secondpage">
+      <select class="profile" id="select">
+        <option class="" disabled selected value>-- Select your favorite Superhero --</option>
+        <option class="heroes male" value="Thor">Thor</option>
+        <option class="heroes male" value="Iron Man">Iron Man</option>
+        <option class="heroes male" value="Captain America">Captain America</option>
+        <option class="heroes male" value="Spiderman">Spiderman</option>
+        <option class="heroes female" value="Black Widow">Black Widow</option>
+        <option class="heroes female" value="Storm">Storm</option>
+        <option class="heroes female" value="Jean Grey">Jean Grey</option>
+        <option class="heroes female" value="Invisible Woman">Invisible Woman</option>
+
+      </select>
+    </div>
+
+
+    <h2 class="secondpage">Favorite Marvel Movie:</h2>
+    <form class="secondpage movie">
+      <input type="radio" name="radio" class="movie" value="Avengers">Avengers
+      <input type="radio" name="radio" class="movie" value="Avengers age of Ultron">Avengers age of Ultron
+      <input type="radio" name="radio" class="movie" value="Civil War">Civil War
+      <input type="radio" name="radio" class="movie" value="Iron Man 3">Iron Man 3
+      <input type="radio" name="radio" class="movie" value="Thor: Dark World">Thor: Dark World
+      <input type="radio" name="radio" class="movie" value="Guardians of the Galaxy">Guardians of the Galaxy
+      <br>
+      <button type="button" id="button" name="button">Submit information</button>
+    </form>
+
+    <div class="jumbotron secondpage result" id="result">
+
+    </div>
+
+
+    <div id="thirdpage" class="thirdpage">
+      <h1>WELCOME!!!</h1>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          User
+        </div>
+        <div class="panel-footer" id="displayUser"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Email
+        </div>
+        <div class="panel-footer" id="displayEmail"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Phone Number
+        </div>
+        <div class="panel-footer" id="displayPhone"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Gender
+        </div>
+        <div class="panel-footer" id="displayGender"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Favorite Hero
+        </div>
+        <div class="panel-footer" id="displayHero"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Favorite Movie
+        </div>
+        <div class="panel-footer" id="displayMovie"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script  src="js/bootstrap.min.js" ></script>
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
